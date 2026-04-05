@@ -1,0 +1,23 @@
+# Секреты — никогда не коммитить!
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Логи
+*.log
+jarvis_errors.log
+
+# Данные
+jarvis_db_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp

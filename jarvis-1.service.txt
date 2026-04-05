@@ -1,0 +1,15 @@
+[Unit]
+Description=Jarvis Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/jarvis_project
+ExecStartPre=/bin/sleep 5
+ExecStart=/bin/bash /root/start_jarvis.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
